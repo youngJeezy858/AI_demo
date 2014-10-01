@@ -1,0 +1,21 @@
+<div class="visible-phone">
+  <div class="page-header">
+    <h1>Suggestions</h1>
+  </div>
+
+  <% @activities.each do |activity| %>
+    <div class="listing">
+      <h4><%= activity.title %></h4>
+      <div style="float: left">
+	<%= activity.distance %> miles
+      </div>
+      <div style="float: right">
+	<%= activity.start_date.strftime("%-m/%-d %l:%M") %>
+      </div>
+      <br/><br/>
+      <%= link_to "Show Me More", activity, class: 'btn btn-block' %> 
+    </div> 
+  <% end %>
+  
+
+</div>

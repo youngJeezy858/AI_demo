@@ -1,0 +1,21 @@
+<div class="visible-phone">
+
+  <div class="page-header">
+    <h1><%= @activity.title %></h1>
+  </div>
+
+  <h4><%= @activity.distance %> miles</h4>
+
+  <p>Location: <%= @activity.location %></p>
+
+  <p>Start Date: <%= @activity.start_date %></p>
+  <p>End Date: <%= @activity.end_date %></p>
+
+  <p><%= @activity.desc %></p>
+
+  <%= link_to "Activity Webpage", @activity.link, class: 'btn btn-block' %>
+  <br/>
+  <%= link_to "Back", activities_path, class: 'btn btn-block' %>
+  <br/><br/><br/>
+
+</div>
