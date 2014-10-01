@@ -24,10 +24,17 @@ $ bundle install
 $ rake db:migrate
 ```
 
+#### Start the App
 
-Instructions for installing and using twitter bootstrap can be found
-below.  However the tutorial is missing a gem you will need so add
-this line to your Gemfile before starting:
+```
+$ rails server
+```
+
+From there you can view the app from your web browser by entering
+localhost:3000 in the address bar.  Instructions for installing and
+using twitter bootstrap can be found below.  However the tutorial is
+missing a gem you will need so add this line to your Gemfile before
+starting:
 
 ```
 gem 'less-rails'
