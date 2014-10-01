@@ -1,0 +1,36 @@
+<%= form_for @activity do |f| %>
+<%= f.label :title %>
+<br/>
+<%= f.text_field :title %>
+<br/>
+<%= f.label :desc %>
+<br/>
+<%= f.text_area :desc %>
+<br/>
+<%= f.label :location %>
+<br/>
+<%= f.text_field :location %>
+<br/>
+<%= f.label :distance %>
+<br/>
+<%= f.number_field :distance, :step => 0.1 %>
+<br/>
+<%= f.label :link %>
+<br/>
+<%= f.text_field :link %>
+<br/>
+<%= f.label :start_date %>
+<br/>
+<%= f.datetime_select :start_date %>
+<br/>
+<%= f.label :end_date %>
+<br/>
+<%= f.datetime_select :end_date %>
+<br/>
+<br/>
+
+
+<%= f.submit %>
+<%= link_to "Back", activities_path %>
+
+<% end %>

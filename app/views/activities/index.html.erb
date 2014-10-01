@@ -1,0 +1,28 @@
+<h1>Activities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Distance</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @activities.each do |activity| %>
+    <tr>
+      <td><%= activity.title %></td>
+      <td><%= activity.distance %> miles</td>
+      <td><%= activity.start_date %></td>
+      <td><%= activity.end_date %></td>
+      <td><%= link_to "View", activity %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to "Create Activity", new_activity_path %>
+<%= link_to "Home", root_path %>
