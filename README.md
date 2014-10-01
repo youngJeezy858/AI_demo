@@ -13,14 +13,13 @@ $ sudo apt-get install ruby-rails-3.2 sqlite3 libsqlite3-dev libmysqlclient-dev 
 #### Clone the 'before' version
 
 ```
-$ git clone https://github.com/youngJeezy858/AI_demo.git
-$ cd AI_demo
-$ git checkout v0.1
+$ git clone --branch v0.1 https://github.com/youngJeezy858/AI_demo.git
 ```
 
 #### Install gems and provision DB
 
 ```
+$ cd AI_demo
 $ bundle install
 $ rake db:migrate
 ```
